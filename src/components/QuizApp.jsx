@@ -140,7 +140,7 @@ export default function QuizApp() {
         <CardContent>
           <Box sx={{ backgroundColor: 'primary.main', color: 'buttonColor', p: 1, width:"20%", borderRadius: 1 }}>
             <Typography sx={{ fontSize: 15 }} gutterBottom>
-              Question n°{questionNumber}+1
+              Question n°{questionNumber+1}
             </Typography>
           </Box>
         </CardContent>
