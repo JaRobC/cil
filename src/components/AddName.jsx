@@ -34,7 +34,7 @@ function AddName() {
         let [data, setData] = useState([]);
     
         useEffect(() => {
-          fetch('http://localhost:5050/api/resultats', 
+          fetch('https://learnsibackend.onrender.com/api/resultats', 
           {method:"GET",})
               .then(response => response.json())
               .then((data) => {setData(data)});
@@ -53,7 +53,7 @@ function AddName() {
     {/* Fonction pour ajouter des lignes dans notres bdd (si le joueur accepte) */}
     
     function UsePush() {
-        axios.post('http://localhost:5050/api/resultats_leaderboard', {
+        axios.post('https://learnsibackend.onrender.com/api/resultats_leaderboard', {
               username: username,
               resultats: resultat,
               essais: 0,
