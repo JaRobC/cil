@@ -71,7 +71,7 @@ export default function QuizApp() {
     let [data, setData] = useState([]);
 
     useEffect(() => {
-      fetch('http://localhost:5050/api/questions', 
+      fetch('https://learnsibackend.onrender.com/api/questions', 
       {method:"GET",})
           .then(response => response.json())
           .then((data) => {setData(data)});
@@ -104,7 +104,7 @@ export default function QuizApp() {
   {/* Création du ligne "fantome"/"ephemere" */}
 
   function UsePush() {
-    axios.post('http://localhost:5050/api/resultats', {
+    axios.post('https://learnsibackend.onrender.com/api/resultats', {
           username: "null",
           resultats: answer,
           essais: 0,
