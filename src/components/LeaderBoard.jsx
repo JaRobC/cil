@@ -16,7 +16,7 @@ function LeaderBoard() {
 
     
         useEffect(() => {
-          fetch('http://localhost:5050/api/resultats_leaderboard', 
+          fetch('https://learnsibackend.onrender.com/api/resultats_leaderboard', 
           {method:"GET",})
               .then((response) => response.json())
               .then((data) => {setData(data)});
